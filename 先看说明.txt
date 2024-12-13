@@ -1,0 +1,36 @@
+本模板是使用Python语言编写的！！！！
+
+前提先安装Python3.8（百度自己下载去）
+python -m ensurepip --default-pip           #pip的安装
+python -m pip install --upgrade pip         #pip的升级
+
+安装运行所需要库：
+import time
+import requests
+import json
+import schedule
+import datetime
+from bs4 import BeautifulSoup
+
+
+天气推送模板.py  中的所有：（XXX替换内容XXX）是需要你自己更改为自己所需信息的地方，其他别改!!!!!
+
+微信公众测试号申请：
+https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index
+
+
+模板：
+标题：
+宝宝，早上好呀~
+模板内容：
+早上好呀宝宝！❤ 
+今天是：{{date.DATA}} {{zhouji.DATA}} 
+不管哪一天，每一天都是爱你的一天 ！！！
+当前城市：{{region.DATA}} 
+天气：{{weather.DATA}} 
+气温：{{temp.DATA}} 
+风向：{{wind_dir.DATA}} 
+今天是我们恋爱的第{{love_day.DATA}} 
+生日：{{birthday1.DATA}}
+
+#一个字都别改啊，除非你看得懂源码，然后在去修改

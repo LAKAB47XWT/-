@@ -1,0 +1,26 @@
+name: XXXXX
+on:
+  schedule:
+  - cron:  '00 00 * * *'      #设置定时
+  workflow_dispatch:            #设置手动运行
+
+jobs:
+  send_message:
+    runs-on: ubuntu-latest                          #使用无版图系统（linux）
+    name: send messages to your girlfriend          #给你女朋友发消息
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3        #actions的自动脚本
+      with:
+        ref: main                      #根据你自己github存放的仓路径
+
+    - name: setup python               #安装python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'          #安装python.3X
+        architecture: 'x64'
+
+    - run: pip install -r ./运行库.txt && python ./天气推送脚本.py
+	#使用pip，安装所需的库（这里改为自己仓里面的，文件名）
+	#注：运行库.txt      天气推送脚本.py    这两个需要根据自己文件名进行修改，建议使用英文。
