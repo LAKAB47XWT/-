@@ -20,7 +20,7 @@ https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/ind
 。。。。。。。。。。。更多请查看上面的说明.txt文件
 
 效果图：
-![image](https://github.com/user-attachments/assets/4fb289c3-a14b-41cb-bf47-181947d1809c)
+![image](https://github.com/user-attachments/assets/553bd629-d303-4425-8bbe-2746fa0b895e)
 
 
 关于自动化执行py程序，实现每天定点发送，
