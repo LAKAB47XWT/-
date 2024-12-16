@@ -1,4 +1,5 @@
 本模板是使用Python语言编写的！！！！
+仅限于自己学习使用！！！！！！！！
 
 前提先安装Python3.8（百度自己下载去）
 python -m ensurepip --default-pip           #pip的安装
